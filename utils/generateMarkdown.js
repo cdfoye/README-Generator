@@ -28,7 +28,27 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  if (license === 'MIT') {
 
+    return `This application is covered under the MIT license`;
+
+  } else if (license === 'GNU') {
+
+    return `This application is covered under the GNU GPLv3 license`;
+
+  } else if (license === 'Apache') {
+
+    return `This application is covered under the Apache license`;
+
+  } else if (license === 'Unlicense') {
+
+    return `This application is covered under the Unlicense`;
+
+  } else {
+
+    return ``;
+
+  }
 }
 
 // TODO: Create a function that returns the license section of README
