@@ -36,22 +36,22 @@ const questions = () => {
         {
             type: 'input',
             name: 'install',
-            message: 'What command should be run to install dependencies?',
+            message: 'What are the steps required to install your project?',
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'What command should be run to run tests?',
+            message: 'Enter any test instructions:',
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'What does the user need to know about using the repo?',
+            message: 'Provide instructions and examples for use:',
         },
         {
             type: 'input',
             name: 'contribution',
-            message: 'What does the user need to know about contributing to the repo?',
+            message: 'Enter contribution guidelines:',
         },
     ]);
 };
