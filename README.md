@@ -31,6 +31,8 @@
 
   The following gif demonstrates how to use this application:
 
+  ![gif tutorial of project](./assets/tutorial.gif)
+
   For a more detailed walkthrough, click the link below to watch a tutorial:
   
   ## Contributing
