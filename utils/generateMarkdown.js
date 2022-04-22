@@ -8,15 +8,15 @@ function renderLicenseBadge(license) {
 
   } else if (license == 'GNU') {
 
-    return `[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`;
+    return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
 
   } else if (license == 'Apache') {
 
-    return `[![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
+    return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
 
   } else if (license == 'Unlicense') {
 
-    return `[![License: Unlicense](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
+    return `![License: Unlicense](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
 
   } else {
 
