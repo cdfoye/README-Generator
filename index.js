@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 // import generateMarkdown function
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
         {
@@ -56,14 +56,11 @@ const questions = () => {
     ]);
 };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
+// function to initialize app
 const init = () => {
     questions()
     // used writeFileSync method to use promises instead of a callback function
-    .then((data) => fs.writeFileSync('Sample.md', generateMarkdown(data)))
+    .then((data) => fs.writeFileSync('SAmple.md', generateMarkdown(data)))
     .then(() => console.log('README successfully created'))
     .catch((err) => console.error(err));
 };
