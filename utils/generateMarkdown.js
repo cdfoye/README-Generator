@@ -8,31 +8,24 @@ function renderLicenseBadge(license) {
 
     badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
 
-    return badge;
-
   } else if (license === 'GNU') {
 
     badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
-
-    return badge;
 
   } else if (license === 'Apache') {
 
     badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
 
-    return badge;
-
   } else if (license === 'Unlicense') {
 
     badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
 
-    return badge
-
   } else {
 
-    return badge;
-
+    badge = '';
   }
+
+  return badge;
 }
 
 // TODO: Create a function that returns the license link
@@ -45,31 +38,25 @@ function renderLicenseLink(license) {
 
     licenseLink = `This application is covered under the MIT license`;
 
-    return licenseLink;
-
   } else if (license === 'GNU') {
 
     licenseLink = `This application is covered under the GNU GPLv3 license`;
-
-    return licenseLink;
 
   } else if (license === 'Apache') {
 
     licenseLink = `This application is covered under the Apache license`;
 
-    return licenseLink;
-
   } else if (license === 'Unlicense') {
 
     licenseLink = `This application is covered under the Unlicense`;
 
-    return licenseLink;
-
   } else {
 
-    return licenseLink;
+    licenseLink = '';
 
   }
+
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
