@@ -2,25 +2,35 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
+  let badge = '';
+
   if (license === 'MIT') {
 
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+    badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+
+    return badge;
 
   } else if (license === 'GNU') {
 
-    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+    badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+
+    return badge;
 
   } else if (license === 'Apache') {
 
-    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+
+    return badge;
 
   } else if (license === 'Unlicense') {
 
-    return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+
+    return badge
 
   } else {
 
-    return ``;
+    return badge;
 
   }
 }
@@ -28,25 +38,36 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+
+  let licenseLink = '';
+
   if (license === 'MIT') {
 
-    return `This application is covered under the MIT license`;
+    licenseLink = `This application is covered under the MIT license`;
+
+    return licenseLink;
 
   } else if (license === 'GNU') {
 
-    return `This application is covered under the GNU GPLv3 license`;
+    licenseLink = `This application is covered under the GNU GPLv3 license`;
+
+    return licenseLink;
 
   } else if (license === 'Apache') {
 
-    return `This application is covered under the Apache license`;
+    licenseLink = `This application is covered under the Apache license`;
+
+    return licenseLink;
 
   } else if (license === 'Unlicense') {
 
-    return `This application is covered under the Unlicense`;
+    licenseLink = `This application is covered under the Unlicense`;
+
+    return licenseLink;
 
   } else {
 
-    return ``;
+    return licenseLink;
 
   }
 }
@@ -55,11 +76,17 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
-  if (license) {
-    let section = `## License`;
-    let content = `License Link: ${renderLicenseLink(license)}`;
+  let content = '';
 
-    return section, content;
+  if (license) {
+    console.log(license);
+    content = renderLicenseLink(license);
+
+    return content;
+  } else if (license === 'I dont want a license') {
+    
+    return content;
+
   }
 }
 
@@ -104,6 +131,8 @@ function generateMarkdown(data) {
 
   For additional questions you can email me at ${data.email}
 
+  ## License
+  
   ${renderLicenseSection(data.license)}`;
 
 }
