@@ -60,7 +60,7 @@ const questions = () => {
 const init = () => {
     questions()
     // used writeFileSync method to use promises instead of a callback function
-    .then((data) => fs.writeFileSync('EXample.md', generateMarkdown(data)))
+    .then((data) => fs.writeFileSync('newREADME.md', generateMarkdown(data)))
     .then(() => console.log('README successfully created'))
     .catch((err) => console.error(err));
 };
