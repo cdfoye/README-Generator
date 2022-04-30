@@ -29,11 +29,7 @@
 
   [Link to the README-Generator repository](https://github.com/cdfoye/README-Generator)
 
-  The following gif demonstrates how to use this application:
-
-  ![gif tutorial of project](./assets/tutorial.gif)
-
-  For a more detailed walkthrough, click the link below to watch a tutorial:
+  For a detailed walkthrough, click the link below to watch a tutorial:
 
   [Link to tutorial video](https://drive.google.com/file/d/1_3uIyzlggbUAZaT_BVkYq7mDSAZAy2Si/view)
   
