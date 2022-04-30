@@ -1,10 +1,10 @@
-# Project Title
+# Team-Profile-Generator
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  
 
   ## Description
 
-  A description of your project goes here.
+  A command line application to create a new employee directory. The user will be asked to answer prompt questions pertaining to the team manager, engineer, or intern information. The user can add as many engineers or inters as they would like, and when they are finished a new HTML file is generated, displaying their new team page.
   
   ## Table of Contents
   
@@ -17,26 +17,25 @@
   
   ## Installation
   
-  List out the steps for installing your project.
+  
   
   ## Usage
 
-  Place any instruction your user will need to run your application. Provide screenshots or videos as necessary.
+  
   
   ## Contributing
 
-  Add any guidelines regarding contributing to your project.
+  If you would like to contribute please reach out to me on Github or send me an email.
   
   ## Tests
 
-  If there are tests, provide instructions on how to run them.
+  
 
   ## Questions
 
-  If you have any questions please visit my Github profile: [username](https://github.com/username)
+  If you have any questions please visit my Github profile: [cdfoye](https://github.com/cdfoye)
 
-  For additional questions you can email me at email@email.com
+  For additional questions you can email me at cdfoye@gmail.com
   
   ## License
 
-  This application is covered under the MIT license
